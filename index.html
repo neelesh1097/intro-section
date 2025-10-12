@@ -18,54 +18,59 @@
 <body>
   <!-- Navigation -->
   <nav class="navbar">
+    <!-- Logo -->
     <div class="nav-brand">
       <img src="images/logo.svg" alt="Snap logo">
     </div>
     
-    <!-- Desktop Navigation -->
-    <div class="nav-menu">
-      <ul class="nav-links">
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link">Features</a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">
-              <img src="images/icon-todo.svg" alt="Todo list">
-              Todo List
-            </a>
-            <a href="#" class="dropdown-item">
-              <img src="images/icon-calendar.svg" alt="Calendar">
-              Calendar
-            </a>
-            <a href="#" class="dropdown-item">
-              <img src="images/icon-reminders.svg" alt="Reminders">
-              Reminders
-            </a>
-            <a href="#" class="dropdown-item">
-              <img src="images/icon-planning.svg" alt="Planning">
-              Planning
-            </a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link">Company</a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">History</a>
-            <a href="#" class="dropdown-item">Our Team</a>
-            <a href="#" class="dropdown-item">Blog</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Careers</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
-        </li>
-      </ul>
-    </div>
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">
+          Features
+          <img src="images/icon-arrow-down.svg" alt="Dropdown arrow" class="dropdown-arrow">
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">
+            <img src="images/icon-todo.svg" alt="Todo list">
+            Todo List
+          </a>
+          <a href="#" class="dropdown-item">
+            <img src="images/icon-calendar.svg" alt="Calendar">
+            Calendar
+          </a>
+          <a href="#" class="dropdown-item">
+            <img src="images/icon-reminders.svg" alt="Reminders">
+            Reminders
+          </a>
+          <a href="#" class="dropdown-item">
+            <img src="images/icon-planning.svg" alt="Planning">
+            Planning
+          </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">
+          Company
+          <img src="images/icon-arrow-down.svg" alt="Dropdown arrow" class="dropdown-arrow">
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">History</a>
+          <a href="#" class="dropdown-item">Our Team</a>
+          <a href="#" class="dropdown-item">Blog</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Careers</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">About</a>
+      </li>
+    </ul>
     
     <!-- Auth Buttons -->
     <div class="nav-auth">
-      <button class="btn-login">Login</button>
+      <a href="#" class="btn-login">Login</a>
       <button class="btn-register">Register</button>
     </div>
     
@@ -74,6 +79,41 @@
       <img src="images/icon-menu.svg" alt="Menu" class="menu-icon">
     </button>
   </nav>
+
+  <div class="mobile-sidebar">
+  <button class="close-btn" aria-label="Close menu">
+    <img src="images/icon-close-menu.svg" alt="Close" />
+  </button>
+
+  <ul class="mobile-nav-links">
+    <li class="mobile-dropdown">
+      <a href="#" class="mobile-link">Features</a>
+      <ul class="mobile-submenu">
+        <li><a href="#"><img src="images/icon-todo.svg" alt="">Todo List</a></li>
+        <li><a href="#"><img src="images/icon-calendar.svg" alt="">Calendar</a></li>
+        <li><a href="#"><img src="images/icon-reminders.svg" alt="">Reminders</a></li>
+        <li><a href="#"><img src="images/icon-planning.svg" alt="">Planning</a></li>
+      </ul>
+    </li>
+
+    <li class="mobile-dropdown">
+      <a href="#" class="mobile-link">Company</a>
+      <ul class="mobile-submenu">
+        <li><a href="#">History</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#" class="mobile-link">Careers</a></li>
+    <li><a href="#" class="mobile-link">About</a></li>
+
+    <div class="mobile-auth">
+      <a href="#" class="login">Login</a>
+      <button class="register">Register</button>
+    </div>
+  </ul>
+</div>
 
   <!-- Main Content -->
   <main class="main-content">
@@ -99,10 +139,12 @@
       <!-- Hero Image -->
       <div class="hero-image">
         <img src="images/image-hero-desktop.png" alt="Hero illustration" class="hero-img-desktop">
-       
+        <img src="images/image-hero-mobile.png" alt="Hero illustration" class="hero-img-mobile">
       </div>
     </div>
   </main> 
   
 </body>
+
+<script src="script.js"></script>
 </html>
